@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    height: 100vh; /* Full viewport height for demonstration */
+    place-items: center;
+
+}
+.input-container {
+    display: grid;
+    gap:5px;
+    width: 200px;
+    margin-top:10px;
+}
+
+input {
+    height:30px;
+    width:300px;
+    outline: none;
+    padding: 2px;
+    
+}

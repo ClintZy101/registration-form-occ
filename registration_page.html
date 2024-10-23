@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="registration-styles.css" />
+  </head>
+  <body >
+   
+    <div style="display: grid;">
+
+      <h1 style="margin-bottom: 20px">Register Now</h1>
+      <form action="">
+        <div class="input-container">
+          <label for="name-id">Full Name</label>
+          <input
+            name="full-name"
+            id="name-id"
+            type="text"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="mobile-id">Contact Number</label>
+          <input
+            type="tel"
+            name="mobile-number"
+            id="mobile-id"
+            placeholder="09xx-xxx-xxxx"
+            pattern="09[\d]{2}-[\d]{3}-[\d]{4}"
+            title="09xx-xxx-xxxx"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="email-id">Email</label>
+          <input
+            type="email"
+            name="user-email"
+            id="email-id"
+            placeholder="sample@email"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <label for="birthday-id">Birthday</label>
+          <input type="date" name="user-birthday" id="birthday-id" required />
+        </div>
+        <div class="input-container">
+          <label for="industry-id">Industry</label>
+          <select name="industry" id="industry-id">
+            <option value="none" disabled selected hidden>
+              -- Select your Industry --
+            </option>
+            <option value="it">IT</option>
+            <option value="agriculture">Agriculture</option>
+            <option value="construction">Construction</option>
+            <option value="medicine">Medicine</option>
+          </select>
+        </div>
+        <div class="input-container">
+          <label for="source">How Did You Know About Us?</label>
+          <select name="source" id="source-id">
+            <option value="none" disabled selected hidden>-- Select --</option>
+            <option value="facebook">Facebook</option>
+            <option value="youtube">Youtube</option>
+            <option value="instagram">Instagram</option>
+            <option value="google">Google</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
