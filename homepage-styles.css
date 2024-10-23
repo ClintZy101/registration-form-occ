@@ -3,5 +3,11 @@
     padding:0
 }
 
+button:hover{
+    background-color: black;
+    color:white;
+   transition-duration: 500ms;
+}
+
 
 
